@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Choclate Box</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <script src="app.js"></script>
+    <h1>Choclate:-</h1>
+    <div class="all-choclate">
+      <div class="choclate-item" data-price="5">
+        <p>Bournville</p>
+        <p>Price 225</p>
+        <button onclick="addToPack('Milk Choclate', 225)">Add</button>
+        <button onclick="removeFromPack('Milk Choclate', 225)">Remove</button>
+      </div>
+      <div class="choclate-item" data-price="10">
+        <p>Amul Chocozoo</p>
+        <p>Price 120</p>
+        <button onclick="addToPack('Dark Choclate', 120)">Add</button>
+        <button onclick="removeFromPack('Dark Choclate', 120)">Remove</button>
+      </div>
+      <div class="choclate-item" data-price="11">
+        <p>Kaccha Mango Bite</p>
+        <p>Price 110</p>
+        <button onclick="addToPack('Dark Choclate1', 110)">Add</button>
+        <button onclick="removeFromPack('Dark Choclate1', 110)">Remove</button>
+      </div>
+      <div class="choclate-item" data-price="13">
+        <p>Snickers</p>
+        <p>Price 130</p>
+        <button onclick="addToPack('Dark Choclate2', 130)">Add</button>
+        <button onclick="removeFromPack('Dark Choclate2', 130)">Remove</button>
+      </div>
+      <div class="choclate-item" data-price="9">
+        <p>Lotus Dark Chocolate</p>
+        <p>Price 200</p>
+        <button onclick="addToPack('Dark Choclate4', 200)">Add</button>
+        <button onclick="removeFromPack('Dark Choclate4', 200)">Remove</button>
+      </div>
+      <div class="choclate-item" data-price="20">
+        <p>Lemongrass chocolate</p>
+        <p>Price 250</p>
+        <button onclick="addToPack('Dark Choclate9', 250)">Add</button>
+        <button onclick="removeFromPack('Dark Choclate9', 250)">Remove</button>
+      </div>
+    </div>
+    <div class="total">
+      <h3 id="pack-summary">Your Pack (0/8)</h3>
+      <ul id="pack-items"></ul>
+      <p>Total Price: <span id="total-price">0</span></p>
+    </div>
+  </body>
+</html>
